@@ -87,10 +87,18 @@
 		}
 		
 		video.addEventListener("play", (event) => {
+    fetch('/simulate_eeg_data')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data.message); 
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+
 			play_start();
 		});
 	</script>
 
     </body>
 </html>
-
