@@ -8,15 +8,14 @@ from tools.logging import logger
 #doing all this a the "module level" in "Demo" server mode it will work fine :)
 from db_con import get_db_instance, get_db
 
-eeg_db = get_db()
-eeg_cur = eeg_db.cursor()
-
+dataStorage = []
 def on_sensor_state_changed(sensor, state):
     logger.debug('Sensor {0} is {1}'.format(sensor.Name, state))
 
 def on_brain_bit_signal_data_received(sensor, data):
-    eeg_cur.execute("INSERT INTO brain (movieID, data) VALUES (?, ?)", (0, data))
+    global dataStorage
     logger.debug(data)
+    dataStorage.append(data)
 
 logger.debug("Create Headband Scanner")
 gl_scanner = Scanner([SensorFamily.SensorLEBrainBit])
