@@ -6,6 +6,10 @@ body {
 	font-family: "Lato", sans-serif;
 }
 
+input {
+	font-family: "Lato", sans-serif;
+}
+
 /* HEADER */
 .header {
 	display: flex;
@@ -51,6 +55,8 @@ body {
 	align-items: center;
 	background-color: pink;
 	padding: 10px 20px;
+	box-shadow: 0px 1px 7px black;
+	z-index: 100;
 }
 
 .slim-header .logo {
@@ -71,8 +77,62 @@ body {
 	margin-right: 30px;
 }
 
-/* SPLASH SCREEN */
+/* PROFILE PAGE SIDEBAR */
+.sidebar {
+	height: 100%;
+	width: 200px;
+	position: fixed;
+	background-color: lightpink;
+	color: black;
+	padding-top: 20px;
+	box-shadow: 0px 1px 7px black;
+}
 
+.sidebar ul {
+	list-style-type: none;
+	padding: 30px 0px 0px 10px;
+}
+
+.sidebar ul li {
+	margin-bottom: 15px;
+}
+
+.sidebar a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.profile-content {
+	margin-left: 220px;
+	padding: 20px;
+}
+
+#watch-video-button {
+	background-color: magenta;
+	color: white;
+	border: none;
+	padding: 7px 20px;
+	width: 93%;
+	margin-top: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+#watch-video-button:hover {
+	background-color: palevioletred;
+}
+
+#watch-video-button:active {
+	background-color: red;
+}
+
+/* SPLASH SCREEN */
 .start-page {
 	display: flex;
 	flex-direction: column;
@@ -140,6 +200,20 @@ body {
 	margin: 20px 0;
 }
 
+/* ABOUT SECTION */
+.about-qa {
+	list-style-type: none;
+}
+
+.about-q {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.about-a {
+	font-size: 1em;
+	margin-bottom: 30px;
+}
 
 /* LOGIN PAGE */
 .site-background {
