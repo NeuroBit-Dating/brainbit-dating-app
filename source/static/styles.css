@@ -132,6 +132,13 @@ input {
 	background-color: red;
 }
 
+/* PROFILE CONTENT */
+.profile-content {
+	display: absolute;
+	padding-left: 7px;
+	padding-top: 60px;
+}
+
 /* SPLASH SCREEN */
 .start-page {
 	display: flex;
