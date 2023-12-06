@@ -133,10 +133,10 @@ input {
 }
 
 /* PROFILE CONTENT */
-.profile-content {
+#profile-content {
 	display: absolute;
-	padding-left: 7px;
-	padding-top: 60px;
+	padding-left: 220px;
+	padding-top: 55px;
 }
 
 /* SPLASH SCREEN */
