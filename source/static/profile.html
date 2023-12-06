@@ -9,7 +9,7 @@
 	<body>
 		<!-------------- HEADER ----------------->
 		<header class="slim-header">
-			<a href="index.html" class="logo">Developer</a>
+			<a href="index.html" class="logo">NeuroBit Dating</a>
 			<a href="#" id="profile-pic-hyp">
                 <img src="https://i.stack.imgur.com/34AD2.jpg" alt="John Doe" id="profile-pic" />
             </a>
@@ -17,10 +17,10 @@
 		<!------------- SIDEBAR ----------------->
 		<div class="sidebar">
 			<ul>
-				<li><a href="#">Your partners</a></li>
-				<li><a href="#">Suggested partners</a></li>
-				<li><a href="#">Your summary</a></li>
-				<li><a href="#">Help</a></li>
+				<li><a href="#" class="sidebar_link" onclick="changePage('Your partners');">Your partners</a></li>
+				<li><a href="#" class="sidebar_link" onclick="changePage('Suggested partners');">Suggested partners</a></li>
+				<li><a href="#" class="sidebar_link" onclick="changePage('History');">History</a></li>
+				<li><a href="#" class="sidebar_link" onclick="changePage('Help');">Help</a></li>
 				<li style="margin-top: 0px; margin-bottom: 0px;">
 					<form action="#">
 						<input type="submit" id="watch-video-button" value="VIEW ANALYTICS" />
@@ -34,14 +34,17 @@
 			</ul>
 		</div>
 		<!-------------- MAIN ------------------->
-		<div class="profile-content">
-			<div class="profile-window">
-				<h2>Your partners</h2>
-				<div class="profile-window-content">
+		<div id="profile-content">
+			<div id="profile-window">
+				<h2 id="profile-content-title">Your partners</h2>
+				<div id="profile-window-content">
 					<p>None at the moment</p>
 				</div>
 			</div>
 		</div>
+		<script src="profile.js"></script>
+		<script>
+		</script>
 		<!-------------- FOOTER ----------------->
 		<!--
         <footer class="footer">
